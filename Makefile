@@ -3,8 +3,8 @@ CXX = g++
 CXXFLAGS = -std=c++20 -Wall -Wextra -g
 
 # Project Files
-SRCS = main.cpp WorkerPool.cpp
-HEADERS = WorkerPool.h
+SRCS = main.cpp WorkerPool.cpp FileHandler.cpp
+HEADERS = WorkerPool.h FileHandler.h
 OBJS = $(SRCS:.cpp=.o)
 
 # Output Binary
