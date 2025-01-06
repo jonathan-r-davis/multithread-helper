@@ -7,23 +7,23 @@
 
 FileHandler::FileHandler()
 {
-    std::cout << "FileHandler Constructor" << std::endl;
+    // std::cout << "FileHandler Constructor" << std::endl;
 }
 
 FileHandler::~FileHandler()
 {
-    std::cout << "FileHandler Destructor" << std::endl;
+    // std::cout << "FileHandler Destructor" << std::endl;
 }
 
 void FileHandler::addFile(const std::string& filename)
 {
-    std::cout << "Adding file: " << filename << std::endl;
+    // std::cout << "Adding file: " << filename << std::endl;
     filePaths.push_back(filename);
 }
 
 void FileHandler::processFile(const std::string& filename)
 {
-    std::cout << "Processing file: " << filename << " on thread " << std::this_thread::get_id() << std::endl;
+    // std::cout << "Processing file: " << filename << " on thread " << std::this_thread::get_id() << std::endl;
     std::ifstream file(filename);
     if (file.is_open()) 
     {
